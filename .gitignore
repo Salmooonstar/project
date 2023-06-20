@@ -1,0 +1,228 @@
+#include <stdio.h>
+
+void customerdtls() {
+    char name[20];
+    char acn[20];
+    char password[15];
+    printf("\nName: ");
+    scanf("%s", &name);
+    printf("Account Number: ");
+    scanf("%s", &acn);
+    printf("Password: ");
+    scanf("%s", &password);
+
+    printf("Your order is successful");
+}
+
+void preorder() {
+    char product[50];
+    printf("Enter the product you want to pre-order: ");
+    scanf("%s", &product);
+
+    printf("Thank you for pre-ordering %s. We will notify you when it is available.\n", product);
+}
+
+void aboutSamsung() {
+    printf("About Samsung:\n");
+    printf("Samsung is a multinational conglomerate known for its electronics and technology products.\n");
+    printf("The company was founded in 1938 by Lee Byung-chul and has since become one of the world's largest technology companies.\n");
+    printf("Samsung offers a wide range of products, including smartphones, tablets, smartwatches, TVs, home appliances, and more.\n");
+    printf("With a focus on innovation and quality, Samsung has gained a strong reputation for its cutting-edge technology and sleek designs.\n");
+    printf("For more information, visit the official Samsung website.\n");
+}
+
+void tvAndComputer() {
+    printf("<Available TVs and Computers>\n");
+    printf("1. Samsung QLED 4K TV - 55,999 BDT\n");
+    printf("2. Samsung Neo QLED 8K TV - 199,999 BDT\n");
+    printf("3. Samsung 27\" Curved Gaming Monitor - 34,999 BDT\n");
+    printf("4. Samsung Galaxy Book Pro - 89,999 BDT\n");
+
+    printf("The product you want to buy: ");
+    int j;
+    scanf("%d", &j);
+
+    if (j == 1) {
+        printf("Samsung QLED 4K TV\n");
+        printf("Price: 55,999 BDT\n");
+        customerdtls();
+    } else if (j == 2) {
+        printf("Samsung Neo QLED 8K TV\n");
+        printf("Price: 199,999 BDT\n");
+        customerdtls();
+    } else if (j == 3) {
+        printf("Samsung 27\" Curved Gaming Monitor\n");
+        printf("Price: 34,999 BDT\n");
+        customerdtls();
+    } else if (j == 4) {
+        printf("Samsung Galaxy Book Pro\n");
+        printf("Price: 89,999 BDT\n");
+        customerdtls();
+    }
+}
+
+void homeAppliance() {
+    printf("<Available Home Appliances>\n");
+    printf("1. Samsung Refrigerator - 75,999 BDT\n");
+    printf("2. Samsung Washing Machine - 45,999 BDT\n");
+    printf("3. Samsung Air Conditioner - 55,999 BDT\n");
+    printf("4. Samsung Vacuum Cleaner - 10,999 BDT\n");
+
+    printf("The product you want to buy: ");
+    int j;
+    scanf("%d", &j);
+
+    if (j == 1) {
+        printf("Samsung Refrigerator\n");
+        printf("Price: 75,999 BDT\n");
+        customerdtls();
+    } else if (j == 2) {
+        printf("Samsung Washing Machine\n");
+        printf("Price: 45,999 BDT\n");
+        customerdtls();
+    } else if (j == 3) {
+        printf("Samsung Air Conditioner\n");
+        printf("Price: 55,999 BDT\n");
+        customerdtls();
+    } else if (j == 4) {
+        printf("Samsung Vacuum Cleaner\n");
+        printf("Price: 10,999 BDT\n");
+        customerdtls();
+    }
+}
+
+int main() {
+    int i;
+    printf("WELCOME TO SAMSUNG\n");
+    printf("________________________\n");
+    printf("Choose your option\n");
+    printf("1. Smartphones\n");
+    printf("2. Smart Watches\n");
+    printf("3. Galaxy Buds\n");
+    printf("4. Accessories\n");
+    printf("5. Pre-order\n");
+    printf("6. TV and Computer\n");
+    printf("7. Home Appliance\n");
+    printf("8. About Samsung\n");
+    scanf("%d", &i);
+
+    if (i == 1) {
+        printf("<Available Smartphones>\n");
+        printf("1. Samsung Galaxy S21 Ultra - 79,999 BDT\n");
+        printf("2. Samsung Galaxy S22 Ultra - 99,999 BDT\n");
+        printf("3. Samsung Galaxy S23 Ultra - 169,999 BDT\n");
+        printf("4. Samsung Galaxy A53 - 45,999 BDT\n");
+        printf("5. Samsung Galaxy Z Flip4 - 145,999 BDT\n");
+        printf("6. Samsung Galaxy Z Fold4 - 160,999 BDT\n");
+
+        printf("The product you want to buy: ");
+        int j;
+        scanf("%d", &j);
+
+        if (j == 1) {
+            printf("Samsung Galaxy S21 Ultra\n");
+            printf("Price: 79,999 BDT\n");
+            customerdtls();
+        } else if (j == 2) {
+            printf("Samsung Galaxy S22 Ultra\n");
+            printf("Price: 99,999 BDT\n");
+            customerdtls();
+        } else if (j == 3) {
+            printf("Samsung Galaxy S23 Ultra\n");
+            printf("Price: 169,999 BDT\n");
+            customerdtls();
+        } else if (j == 4) {
+            printf("Samsung Galaxy A53\n");
+            printf("Price: 45,999 BDT\n");
+            customerdtls();
+        } else if (j == 5) {
+            printf("Samsung Galaxy Z Flip4\n");
+            printf("Price: 145,999 BDT\n");
+            customerdtls();
+        } else if (j == 6) {
+            printf("Samsung Galaxy Z Fold4\n");
+            printf("Price: 160,999 BDT\n");
+            customerdtls();
+        }
+    } else if (i == 2) {
+        printf("<Available Smart Watches>\n");
+        printf("1. Samsung Galaxy Watch 4 - 19,999 BDT\n");
+        printf("2. Samsung Galaxy Watch 4 Classic - 24,999 BDT\n");
+        printf("3. Samsung Galaxy Watch 4 Active - 17,999 BDT\n");
+
+        printf("The product you want to buy: ");
+        int j;
+        scanf("%d", &j);
+
+        if (j == 1) {
+            printf("Samsung Galaxy Watch 4\n");
+            printf("Price: 19,999 BDT\n");
+            customerdtls();
+        } else if (j == 2) {
+            printf("Samsung Galaxy Watch 4 Classic\n");
+            printf("Price: 24,999 BDT\n");
+            customerdtls();
+        } else if (j == 3) {
+            printf("Samsung Galaxy Watch 4 Active\n");
+            printf("Price: 17,999 BDT\n");
+            customerdtls();
+        }
+    } else if (i == 3) {
+        printf("<Available Galaxy Buds>\n");
+        printf("1. Samsung Galaxy Buds Pro - 12,999 BDT\n");
+        printf("2. Samsung Galaxy Buds Live - 9,999 BDT\n");
+        printf("3. Samsung Galaxy Buds Plus - 7,999 BDT\n");
+
+        printf("The product you want to buy: ");
+        int j;
+        scanf("%d", &j);
+
+        if (j == 1) {
+            printf("Samsung Galaxy Buds Pro\n");
+            printf("Price: 12,999 BDT\n");
+            customerdtls();
+        } else if (j == 2) {
+            printf("Samsung Galaxy Buds Live\n");
+            printf("Price: 9,999 BDT\n");
+            customerdtls();
+        } else if (j == 3) {
+            printf("Samsung Galaxy Buds Plus\n");
+            printf("Price: 7,999 BDT\n");
+            customerdtls();
+        }
+    } else if (i == 4) {
+        printf("<Available Accessories>\n");
+        printf("1. Samsung Silicone Case - 1,999 BDT\n");
+        printf("2. Samsung Wireless Charger - 3,999 BDT\n");
+        printf("3. Samsung Clear View Cover - 2,499 BDT\n");
+
+        printf("The product you want to buy: ");
+        int j;
+        scanf("%d", &j);
+
+        if (j == 1) {
+            printf("Samsung Silicone Case\n");
+            printf("Price: 1,999 BDT\n");
+            customerdtls();
+        } else if (j == 2) {
+            printf("Samsung Wireless Charger\n");
+            printf("Price: 3,999 BDT\n");
+            customerdtls();
+        } else if (j == 3) {
+            printf("Samsung Clear View Cover\n");
+            printf("Price: 2,499 BDT\n");
+            customerdtls();
+        }
+    } else if (i == 5) {
+        preorder();
+    } else if (i == 6) {
+        tvAndComputer();
+    } else if (i == 7) {
+        homeAppliance();
+    } else if (i == 8) {
+        aboutSamsung();
+    }
+
+    printf("\nThanks for visiting");
+    return 0;
+}
